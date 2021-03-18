@@ -1,0 +1,92 @@
+[
+   {
+      "id":1,
+      "img_url":"/img/1-product/2.jpg",
+      "product_name":"Ультралёгкая куртка с капюшоном",
+      "product_price":"$1900",
+      "product_old_price": "50",
+      "product_size":"38, 40, 42, 44, 46",
+      "slug":"ultralyogkaya-kurtka-s-kapyushonom"
+   },
+   {
+      "id":2,
+      "img_url":"/img/2-product/2.jpg",
+      "product_name":"Узкие белые джинсы",
+      "product_price":"$750",
+      "product_old_price": "",
+      "product_size":"38, 40, 42, 44, 46",
+      "slug":"uzkie-belye-dzhinsy"
+   },
+   {
+      "id":3,
+      "img_url":"/img/3-product/2.jpg",
+      "product_name":"Платье-футболка с оксидной стиркой",
+      "product_price":"$1000",
+      "product_old_price": "",
+      "product_size":"38, 40, 42, 44, 46",
+      "slug":"plate-futbolka-s-oksidnoj-stirkoj"
+   },
+   {
+      "id":4,
+      "img_url":"/img/4-product/2.jpg",
+      "product_name":"Платье в стиле сафари с накладными карманами",
+      "product_price":"$999",
+      "product_old_price": "170",
+      "product_size":"38, 40, 42, 44, 46",
+      "slug":"plate-v-stile-safari-s-nakladnymi-karmanami"
+   },
+   {
+      "id":5,
+      "img_url":"/img/5-product/2.jpg",
+      "product_name":"Платье в стиле сафари с накладными карманами",
+      "product_price":"$500",
+      "product_old_price": "",
+      "product_size":"38, 40, 42, 44, 46",
+      "slug":"plate-v-stile-safari-s-nakladnymi-karmanami2"
+   },
+   {
+      "id":6,
+      "img_url":"/img/6-product/2.jpg",
+      "product_name":"Кепка с патчем",
+      "product_price":"$90",
+      "product_old_price": "",
+      "product_size":"38, 40, 42, 44, 46",
+      "slug":"kepka-s-patchem"
+   },
+   {
+      "id":7,
+      "img_url":"/img/7-product/2.jpg",
+      "product_name":"Сумка с плечевым ремнём",
+      "product_price":"$3000",
+      "product_old_price": "",
+      "product_size":"38, 40, 42, 44, 46",
+      "slug":"sumka-s-plechevym-remnyom"
+   },
+   {
+      "id":8,
+      "img_url":"/img/8-product/2.jpg",
+      "product_name":"Удлинённая парка с капюшоном",
+      "product_price":"$1500",
+      "product_old_price": "",
+      "product_size":"38, 40, 42, 44, 46",
+      "slug":"udlinyonnaya-parka-s-kapyushonom"
+   },
+   {
+      "id":9,
+      "img_url":"/img/9-product/2.jpg",
+      "product_name":"Стёганое пальто",
+      "product_price":"$3500",
+      "product_old_price": "4000",
+      "product_size":"38, 40, 42, 44, 46",
+      "slug":"styoganoe-palto"
+   },
+   {
+      "id":10,
+      "img_url":"/img/10-product/2.jpg",
+      "product_name":"Байкерская куртка из эко-кожи",
+      "product_price":"$1200",
+      "product_old_price": "",
+      "product_size":"38, 40, 42, 44, 46",
+      "slug":"bajkerskaya-kurtka-iz-ehko-kozhi"
+   }
+]
