@@ -167,25 +167,27 @@
 export default {
     methods: {
         async logout() {
-            await this.$store.dispatch('logout');
+            const token = localStorage.getItem("token")    
+            await this.$store.dispatch('logout', token);
             // this.$store.state.logged = false;
             this.$router.push("/auth")
         }
     },
     async mounted() {
-        if (!Object.keys(this.$store.getters.info).length) {
-            await this.$store.dispatch('fetchInfo');
+        const token = localStorage.getItem("token")       
+        if (!Object.keys(this.$store.getters.usser_info).length && token && token != undefined) {
+            await this.$store.dispatch('fetchUserInfo', token);
         }
-        if (Object.keys(this.$store.getters.info).length) {
-            await this.$store.commit('loginUser');
+        if (Object.keys(this.$store.getters.usser_info).length) {
+            // await this.$store.commit('loginUser');
         }
     },
     computed: {
         logged: function() {
-            return this.$store.state.logged
+            return this.$store.getters.logged
         },
         name() {
-            return this.$store.getters.info.first_name + ' ' + this.$store.getters.info.last_name
+            return this.$store.getters.usser_info.first_name + ' ' + this.$store.getters.usser_info.last_name
         }
     }
 }

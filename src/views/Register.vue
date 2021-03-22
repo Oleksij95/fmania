@@ -120,7 +120,8 @@ export default {
                 first_name: this.first_name,
                 last_name: this.last_name,
                 email: this.email,
-                password: this.password
+                password: this.password,
+                password_confirmation: this.confirm_password
             }
 
             this.notValidFirstName = false

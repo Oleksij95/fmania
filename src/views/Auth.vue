@@ -5,8 +5,8 @@
                 <div class="col-md-8 offset-md-2">
                     <div class="auth_wrapper">
 
-                        <div class="loggin_succeess" v-if="currentUser">
-                            <h3>Hello, {{ this.$store.getters.info.first_name + ' ' + this.$store.getters.info.last_name }}</h3>
+                        <div class="loggin_succeess" v-if="this.$store.getters.logged">
+                            <h3>Hello, {{ this.$store.getters.usser_info.first_name + ' ' + this.$store.getters.usser_info.last_name }}</h3>
                             <button @click="logout">Log out</button> 
                         </div>
                         <div v-else>
@@ -76,7 +76,6 @@ export default {
         password: "",
         notValidMail: false,
         notValidPass: false,
-        currentUser: firebase.auth().currentUser
     }),
     methods: {
         async loginHandler() {
@@ -86,11 +85,7 @@ export default {
             }
 
             this.notValidPass = false
-            this.notValidMail = false
-
-            console.log(document.querySelectorAll(".error_text"));
-            console.log(document.querySelectorAll(".error_text").length);
-            
+            this.notValidMail = false            
         
             if (this.validateForm()) {
                 try {

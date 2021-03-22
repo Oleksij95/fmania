@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/HomePage.vue'
-import firebase from 'firebase/app'
+// import firebase from 'firebase/app'
+import store from '../store'
 
 Vue.use(VueRouter)
 
@@ -60,7 +61,6 @@ const router = new VueRouter({
     if (to.hash) {
       return {
         selector: to.hash
-        // , offset: { x: 0, y: 10 }
       }
     } else{
       return { x: 0, y: 0 }
@@ -71,9 +71,10 @@ const router = new VueRouter({
 
 
 router.beforeEach((to, from, next) => {
-  const currentUser = firebase.auth().currentUser
+  const currentUser = store.getters.logged
   const requireAuth = to.matched.some(record => record.meta.auth)
 
+  console.log(currentUser)
   if (requireAuth && !currentUser) {
     next('/auth')
   } else {
